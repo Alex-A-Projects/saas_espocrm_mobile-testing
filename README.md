@@ -4,8 +4,31 @@ Portfolio-ready mobile-web automation for the public EspoCRM demo:
 
 - **Safari:** iPhone 17 Pro simulator, iOS 26
 - **Chrome:** Samsung Galaxy S25 Android Virtual Device, Android 15 / API 35
-- **Stack:** TypeScript, WebdriverIO, Appium, XCUITest, UiAutomator2, Mocha
 - **Safety:** all public-demo scenarios are read-only
+
+## Stack
+
+**Language & runtime**
+
+- TypeScript 7
+- Node.js >= 20.18.1
+
+**Test runner & framework**
+
+- WebdriverIO 9 (local runner, globals)
+- Mocha
+- `@wdio/spec-reporter`
+
+**Mobile automation**
+
+- Appium 2 (server lifecycle managed by `@wdio/appium-service`)
+- XCUITest driver — iOS Safari
+- UiAutomator2 driver — Android Chrome
+
+**Config & tooling**
+
+- `dotenv` for environment variables
+- `tsx` for TypeScript execution
 
 ## Install
 
